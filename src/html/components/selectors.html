@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+<head>
+  <meta charset="utf-8">
+  //= ../template/css.html
+  <title>Components - Selectors - Concerto Style Guide | DPIM UX Team</title>
+
+</head>
+
+<body class="site-material_ext_publish section-animation first-chapter color-red qp-ui" data-qp-ui="{ 'Mask': {} }">
+  <header class="qp-ui" data-qp-ui="{
+    'Peekaboo': {
+      'mobile': 72,
+      'desktop-sm': 72,
+      'default': 192
+    }
+  }">
+  <div class="header-wrapper qp-ui" data-qp-ui="{
+    'Peekaboo': {
+      'mobile': 28,
+      'desktop-sm': 28,
+      'default': 82
+    }
+  }">
+  <div class="header-title">
+    <span class="section-title">Components</span>
+    <span class="chapter-title">
+      <span class="title-separator">—</span>
+      Selectors
+    </span>
+  </div>
+</div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab"><i class="material-icons material-spec-icon" title="Show navigation">menu</i></button>
+</nav>
+
+//= ../template/menu.html
+
+<div id="grid-cont">
+  <section class="grid_outer chapter">
+    <h1 class="chapter-title">Selectors</h1>
+
+    <div class="chapter-content">
+    <div class="chapter-intro">
+            <p>Selectors provide a simple way to select a value from a pre-determined set.</p>
+    </div>
+      <nav class="chapter-toc">
+        <h1>Contents</h1>
+        <ul>
+          <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#date">Date Selectors</a></li>
+          <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#single">Single select Dropdown</a></li>
+          <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#multi">Multi-Select Dropdown</a></li>
+        </ul>
+      </nav>
+
+      <div class="article-list">
+        <!-- date picker Start -->
+        <div id="date" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+          <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">Date Selectors</h2>
+          <div class="article-content">
+            <div class="module-list">
+              <div>
+                <section class="moduleE1">
+                  <div class="module-body">
+                    <h4>Usage</h4>
+                    <p>A dialog selector is used to select a single date</p>
+                    <h4>Behavior</h4>
+                    <p>A dialog selector is used to select a single dateThe selected day is indicated by a filled square. The current day is indicated by a the CMS accent color and type weight.</p>
+                    </div>
+                     <div class="figure-group">
+                        <div class="figure-row">
+                          <figure class="">
+                            <div class="media">
+                              <video controls>
+                                <source src="../video/date-selector.mp4" type='video/mp4'>
+                              </video>
+                            </div>
+                            <figcaption>
+                              <p>Start Date selector on Season page</p>
+                            </figcaption>
+                          </figure>
+                        </div>
+                      </div>
+                 </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- date picker End -->
+
+        <!-- single selector Start-->
+        <div id="single" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+          <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">Single Select Dropdown</h2>
+          <div class="article-content">
+            <div class="module-list">
+              <div>
+                <section class="moduleB1">
+                  <div class="module-body">
+                   <h4>Usage</h4>
+                    <p>A single-select allows the user to select an item among a list of choices revealed upon opening a temporary dropdown. Each item on the list is a discrete option. The none option appears at the top of the list. It also counts as one of the discrete option, and thus searchable by users.</p>
+                    <p>A single-select is used when only a single item from a list can be selected. The list is a controlled list which can be of any length.</p>
+
+                    <h4>Behavior</h4>
+                    <p>The dropdown should be emitted at the bottom of the Select field. If the height of the sheet prevents all items from being displayed, it can scroll internally. If the list contains 10 or more text items, including the none option, the user should be able to enter a keyword, which functions as a filter. The list displayed after every new keyboard input should refresh to only contain the text items that have the keyword as part of them, presented in alphabetical order.</p>
+                  </div>
+                      <!--div class="figure-group">
+                        <div class="figure-row">
+                          <figure class="">
+                            <div class="media">
+                            <video controls>
+                              <source src="../video/cast-single-select.mp4" type='video/mp4'>
+                            </video>
+                            </div>
+                            <figcaption>
+                              <p>Toggle on TV episode</p>
+                            </figcaption>
+                            </figure>
+                        </div>
+                      </div-->
+                    </section>
+                    <section class="moduleE1">
+                  <div class="module-body">
+                  <h2>Variations</h2>
+                    <h4>Text-Single Select Dropdown</h4>
+                    <p>The interface and interaction for a single select dropdown for text is exactly as stated above</p>
+                    <ul>
+                      <li>Select 1 text item only</li>
+                      <li>Pre-determined, controlled list</li>
+                      <li>autocomplete search becomes available when the list has 7 or more items</li>
+                    </ul>
+                    <p><strong>Use cases:</strong> Series>Rating, Series>Related Series, Series>Status</p>
+                  </div>
+                      <div class="figure-group">
+                        <div class="figure-row">
+                          <figure class="">
+                            <div class="media">
+                              <video controls>
+                                <source src="../video/single-select.mp4" type='video/mp4'>
+                              </video>
+                            </div>
+                            <figcaption>
+                              <p>Toggle on TV episode</p>
+                            </figcaption>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="moduleE1">
+                  <div class="module-body">
+                    <h4>Created Content-Single Select Dropdown</h4>
+                    <p>The interface and interaction for a single-select dropdown for created content is exactly the same as the single-select for text, except the dropdown searches over the titles of non-text items such as Content or Metadata types. This pattern is appropriate for a list of non-text items consisted of one single type (e.g. Person).</p>
+                    <ul>
+                      <li>Select 1 text item only (Content or Metadata)</li>
+                      <li>Pre-determined, controlled list</li>
+                      <li>Always searchable</li>
+                    </ul>
+                    <p><strong>Use cases:</strong> Season>Cast>Person</p>
+                  </div>
+                      <div class="figure-group">
+                        <div class="figure-row">
+                          <figure class="">
+                            <div class="media">
+                              <video controls>
+                                <source src="../video/cast-single-select.mp4" type='video/mp4'>
+                              </video>
+                            </div>
+                            <figcaption>
+                              <p>Toggle on TV episode</p>
+                            </figcaption>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="moduleE1">
+                  <div class="module-body">
+                    <h4>Created Content-Single Select Dropdown w/Autocomplete</h4>
+                    <p>A single-item autocomplete for created content list is very similar to the single-item dropdown for text, in that user can only select one item from a controlled list that is fetched from the server. This single-item w/autocomplete searches over multiple types of items depending on the use case. Since multiple types can exist within the list, extra information of type (e.g. Series, Episode, Gallery, etc.) can be displayed in addition to the title. Due to this feature, this pattern is most appropriate for searching over the list consisted of multiple types. User’s query only searches over the title of the items.</p>
+                    <ul>
+                      <li>Select 1 text item (Content or Metadata)</li>
+                      <li>Pre-determined, controlled list</li>
+                      <li>User can add the next row for more selection via + button; the same item can be added in this new row.</li>
+                      <li>Once selected, the item can be removed by x button: Refer to Add and Remove button for more details on the x button.</li>
+                      <li>Always searchable</li>
+                    </ul>
+                    <p><strong>Use cases:</strong> Series > Collection, Collection > Item, Collection Group > Collection</p>
+                  </div>
+                      <div class="figure-group">
+                        <div class="figure-row">
+                          <figure class="">
+                            <div class="media">
+                              <video controls>
+                                <source src="../video/single-select-auto.mp4" type='video/mp4'>
+                              </video>
+                            </div>
+                            <figcaption>
+                              <p>Toggle on TV episode</p>
+                            </figcaption>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Rsingle selectEnd -->
+         <!-- multi select dropdown Start-->
+        <div id="multi" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+          <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">Multi Select Dropdown</h2>
+          <div class="article-content">
+            <div class="module-list">
+              <div>
+                <section class="moduleB1">
+                  <div class="module-body">
+                   <h4>Usage</h4>
+                    <p>Multi select lists are best suited to presenting a homogeneous sets of text. They are optimized for a selection of one or more text that belong to a certain category. Each tile can be selected only once. All selected tiles are denoted by the corresponding rows highlighted, and their text entries are displayed in the text field in token boxes. The selected items are displayed in the tokens should appear in the order of the list, not the selection. Selected items can be unselected by either clicking on the x icon on a token or clicking on the highlighted item on the list.</p>
+                    <p>The content of a multi-select list should be limited to a single-line text. The content is a controlled list.</p>
+
+                    <h4>Behavior</h4>
+                    <p>A multi select present multiple items vertically as a single continuous element. It allows multiple selections from the list and offers autocompletion upon entering a keyword when the list contains 10 or more text items</p>
+                  </div>
+                      <!--div class="figure-group">
+                        <div class="figure-row">
+                          <figure class="">
+                            <div class="media">
+                             <img style="width: 50%" src="../../imgs/toggle-tv.png">
+                            </div>
+                            <figcaption>
+                              <p>Toggle on TV episode</p>
+                            </figcaption>
+                            </figure>
+                        </div>
+                      </div-->
+                    </section>
+                    <section class="moduleE1">
+                  <div class="module-body">
+                  <h2>Variations</h2>
+                    <h4>Text-Multi Select dropdown </h4>
+                    <p>The interface and interaction for a Multi select dropdown for text is exactly as stated above</p>
+                    <ul>
+                      <li>Select multiple text items</li>
+                      <li>No duplicate item selection; an item can be selected only once</li>
+                      <li>Pre-determined, controlled list</li>
+                      <li>autocomplete search becomes available when the list has 10 or more items</li>
+                    </ul>
+                    <p><strong>Use cases:</strong> Series>Categories, Series>Genre</p>
+                    </div>
+                      <div class="figure-group">
+                        <div class="figure-row">
+                          <figure class="">
+                            <div class="media">
+                              <video controls>
+                                <source src="../video/genre-multi-select.mp4" type='video/mp4'>
+                              </video>
+                            </div>
+                            <figcaption>
+                              <p>Toggle on TV episode</p>
+                            </figcaption>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="moduleE1">
+                  <div class="module-body">
+                    <h4>Text-Multi Select w/Autocomplete and Create New</h4>
+                    <p>The interface and interaction for a multi-select w/autocomplete and create new is exactly the same with the multi-select for text, except User can create a new item. Unlike the multi-select where user can only select from the pre-determined list, user can create a new item and add that to the list in multi-item autocomplete list.</p>
+                    <ul>
+                      <li>Select multiple text items</li>
+                      <li>No duplicate item selection; an item can be selected only once</li>
+                      <li>User can create new items</li>
+                      <li>This type of lists are always searchable</li>
+                    </ul>
+                    <p><strong>Use cases:</strong> Tags</p>
+                  </div>
+                      <div class="figure-group">
+                        <div class="figure-row">
+                          <figure class="">
+                            <div class="media">
+                              <video controls>
+                                <source src="../video/create-new-text.mp4" type='video/mp4'>
+                              </video>
+                            </div>
+                            <figcaption>
+                              <p>Tags field on the Association Card</p>
+                            </figcaption>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="moduleE1">
+                  <div class="module-body">
+                    <h4>Created Content-Multi Select w/Autocomplete Without Create New</h4>
+                    <p>A multi-item autocomplete WITHOUT create new feature behaves exactly the same way as multi-item autocomplete WITH create new feature, except that the user cannot create new item. This pattern is appropriate for the Content or Metadata types that cannot be simply created on the fly.</p>
+                    <ul>
+                      <li>Select multiple items (Content, Metadata)</li>
+                      <li>No duplicate item selection; an item can be selected only once</li>
+                      <li>Pre-determined, controlled list</li>
+                      <li>This type of lists are always searchable</li>
+                    </ul>
+                    <p><strong>Use cases:</strong> Season > Cast > Role(s)</p>
+                  </div>
+                      <div class="figure-group">
+                        <div class="figure-row">
+                          <figure class="">
+                            <div class="media">
+                              <video controls>
+                                <source src="../video/multi-select-no-new.mp4" type='video/mp4'>
+                              </video>
+                            </div>
+                            <figcaption>
+                              <p>Toggle on TV episode</p>
+                            </figcaption>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Radio Toggle End -->
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-L section-what-is-material color-default">&nbsp;</div>
+    <div class="footer-grid-L section-what-is-material color-default">
+      <a class="footer-text" href="../concerto/prototypes.html">
+        <i class="material-icons arrow-L">arrow_back</i>
+        <span class="direction">Previous</span>
+        <div>Prototypes</div>
+      </a>
+    </div>
+
+    <div class="footer-R section-animation color-default">&nbsp;</div>
+    <div class="footer-grid-R section-animation color-default">
+      <a class="footer-text" href="02-ideation.html">
+        <i class="material-icons arrow-R">arrow_forward</i>
+        <span class="direction">Next</span>
+        <div>Collection: Ideation</div>
+      </a>
+    </div>
+  </div>
+</footer>
+//= ../template/js.html
+</body>
+</html>

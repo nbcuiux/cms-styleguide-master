@@ -1,0 +1,107 @@
+@import 'variables.less';
+#grid-cont {
+  position: relative;
+  //margin-top: 80px;
+  padding: 0 80px;
+  background-color: transparent!important;
+}
+
+html body,
+.moduleA1 .module-body p,
+.moduleA2 .module-body p,
+.moduleB1 .module-body p,
+.moduleC1 .module-body p,
+.moduleD1 .module-body p,
+.moduleE1 .module-body p,
+.moduleF1 .module-body p,
+.moduleG1 .module-body p {
+  color: #333;
+  font-size: 15px;
+}
+.moduleA1 h3,
+.moduleA2 h3,
+.moduleB1 h3,
+.moduleC1 h3,
+.moduleD1 h3,
+.moduleE1 h3,
+.moduleF1 h3,
+.moduleG1 h3 {
+  margin-bottom: 10px;
+}
+.moduleA1 h5,
+.moduleA2 h5,
+.moduleB1 h5,
+.moduleC1 h5,
+.moduleD1 h5,
+.moduleE1 h5,
+.moduleF1 h5,
+.moduleG1 h5 {
+  margin-bottom: 0px;
+}
+
+.moduleE1 img, .moduleE1 video, .moduleE1 .video-container {
+  max-width: 700px;
+  width: 100%;
+  position: relative;
+}
+
+.color-red .chapter a {
+  color: #e73c0e;
+  transition: 0.4s ease-out;
+  cursor: pointer;
+  border-bottom: 1px solid fade(@color-accent, 0%);
+}
+.color-red .chapter a:hover {
+    border-color: fade(@color-accent, 30%);
+}
+.color-red .chapter a:active {
+    border-color: fade(@color-accent, 60%);
+}
+
+.article-title.qp-ui {
+  padding-top: 10px!important;
+  margin-bottom: 10px!important;
+}
+
+#side-nav {
+  visibility: hidden;
+  -webkit-transform: translateX(-241px);
+  -moz-transform: translateX(-241px);
+  -ms-transform: translateX(-241px);
+  -o-transform: translateX(-241px);
+  transform: translateX(-241px)
+}
+#side-nav.qp-ui-side-nav-drawer-nogpu {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  left: -241px
+}
+footer .footer-L {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px)
+}
+footer .footer-R {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px)
+}
+@media screen and (min-width: 1480px) {
+  .hamburger-button {
+    display: block;
+  }
+}
+footer {
+  padding: 0 60px;
+}
+footer .footer-grid {
+  margin: 0;
+  width: 100%;
+}

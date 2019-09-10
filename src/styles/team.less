@@ -1,0 +1,64 @@
+@import "variables.less";
+.team {
+  position: relative;
+  margin: 35vh auto 80px auto;
+  padding: 0 40px;
+  max-width: 1400px;
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.person {
+  position: relative;
+  width: 20%;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 0 20px 50px 20px;
+  box-sizing: border-box;
+  animation: personSlideIn 0.7s ease-in-out;
+  animation-fill-mode: backwards;
+  .person-animation-delay(6);
+}
+.person__img {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 10vw;
+  height: 10vw;
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 200px;
+  max-height: 200px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+.person__name {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 10px 0 0 0;
+  color: @color-accent;
+}
+.person__title {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.person-animation-delay(@counter) when (@counter > 0) {
+  .person-animation-delay((@counter - 1));    // next iteration
+  &:nth-child(@{counter}) {
+    animation-delay: (0.4s + 0.1s * @counter);
+  }
+}
+@keyframes personSlideIn {
+  0% {opacity: 0; transform: translate(0, 0) scale(0.9);}
+  100% {opacity: 1; transform: translate(0, 0) scale(1);}
+}

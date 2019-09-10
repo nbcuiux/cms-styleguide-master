@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+<head>
+  <meta charset="utf-8">
+  //= ../template/css.html
+  <title>Components-Table Lists - Concerto Style Guide | DPIM UX Team</title>
+
+</head>
+
+<body class="site-material_ext_publish section-animation first-chapter color-red qp-ui" data-qp-ui="{ 'Mask': {} }">
+  <header class="qp-ui" data-qp-ui="{
+    'Peekaboo': {
+      'mobile': 72,
+      'desktop-sm': 72,
+      'default': 192
+    }
+  }">
+  <div class="header-wrapper qp-ui" data-qp-ui="{
+    'Peekaboo': {
+      'mobile': 28,
+      'desktop-sm': 28,
+      'default': 82
+    }
+  }">
+  <div class="header-title">
+    <span class="section-title">Components</span>
+    <span class="chapter-title">
+      <span class="title-separator">—</span>
+      Table Lists
+    </span>
+  </div>
+</div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab"><i class="material-icons material-spec-icon" title="Show navigation">menu</i></button>
+</nav>
+
+//= ../template/menu.html
+
+<div id="grid-cont">
+  <section class="grid_outer chapter">
+    <h1 class="chapter-title">Table Lists</h1>
+
+    <div class="chapter-content">
+    <div class="chapter-intro">
+    </div>
+      <nav class="chapter-toc">
+        <h1>Contents</h1>
+        <ul>
+          <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#usage">Usage</a></li>
+          <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#structure">Structure</a></li>
+          <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#sort">Sorting & Filtering</a></li>
+          <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#inline">Inline Edit Icon</a></li>
+        </ul>
+      </nav>
+
+      <div class="article-list">
+        <!-- Usage Start -->
+        <div id="usage" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+          <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">Usage</h2>
+          <div class="article-content">
+            <div class="module-list">
+              <div>
+                <section class="moduleB1">
+                  <div class="module-body">
+                    <p>Table lists are used to display large amounts of data that contain multiple fields.  For these lists it is critical to be able to sort and filter the content.</p>
+                    <p>Data tables may include:</p>
+                    <ul>
+                        <li>Three or more columns of data</li>
+                        <li>A corresponding visualization</li>
+                        <li>The ability for users to query and manipulate data</li>
+                    </ul>
+                    <p>Use Case: Content Library, Collection Library</p>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Usage End -->
+
+        <!-- Structure Start-->
+        <div id="structure" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+          <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">Structure</h2>
+          <div class="article-content">
+            <div class="module-list">
+              <div>
+                <section class="moduleE1">
+                  <div class="module-body">
+                    <p>A table list contains a header row at the top that lists column names, followed by rows for data. Checkboxes should accompany each row if the user needs to select or manipulate multiple list items.</p>
+                    <p>Tables contain all critical details to find the created piece of content the user is searching for: </p>
+                    <ul>
+                      <li>Thumbnail Image</li>
+                      <li>Title</li>
+                      <li>Type</li>
+                      <li>Status (published or unpublished)</li>
+                      <li>Season #</li>
+                      <li>Episode #</li>
+                      <li>Date Updated</li>
+                      <li>Date Created</li>
+                      <li>Associated Categories</li>
+                      <li>Associated Tags</li>
+                    </ul>
+                  </div>
+                  <div class="figure-group">
+                    <div class="figure-row">
+                       <figure class="">
+                          <div class="media">
+                           <img  src="../../imgs/content-library.png">
+                          </div>
+                          <figcaption>
+                            <p>Asset Library Overlay on Episodes page</p>
+                          </figcaption>
+                        </figure>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Content End -->
+
+        <!-- Sort Start-->
+        <div id="sort" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+          <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">Sorting & Filtering</h2>
+          <div class="article-content">
+            <div class="module-list">
+              <div>
+                <section class="moduleE1">
+                  <div class="module-body">
+                    <h3>Sorting</h3>
+                    <p>Users have the ability to sort by the above details. The default sort brings the items updated most recently to the top of the list. Clicking on the a column label changes the sorting for the list, indicated by the arrows next to the label.</p>
+                  </div>
+                  <div class="figure-group">
+                    <div class="figure-row">
+                      <figure class="">
+                          <div class="media">
+                           <img  src="../../imgs/list-sort.png">
+                          </div>
+                          <figcaption>
+                            <p>Column Headers for Sorting on Content Library page</p>
+                          </figcaption>
+                        </figure>
+                    </div>
+                  </div>
+                </section> <section class="moduleE1">
+                  <div class="module-body">
+                    <h3>Filtering</h3>
+                    <p>In addition to sorting, users can filter the list by the details above as well as toggle to only show the items created by the user.  Once filter choices are chosen, users must then click apply to apply the filter.</p>
+                  </div>
+                  <div class="figure-group">
+                    <div class="figure-row">
+                      <figure class="">
+                          <div class="media">
+                           <img  src="../../imgs/list-filter.png">
+                          </div>
+                          <figcaption>
+                            <p>Filter section on Content Library page</p>
+                          </figcaption>
+                        </figure>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Behavior Start-->
+
+        <!-- Inline start -->
+
+<div id="inline" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+          <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">In-line Edit Icon</h2>
+          <div class="article-content">
+            <div class="module-list">
+              <div>
+                <section class="moduleE1">
+                  <div class="module-body">
+                    <p>Icon-based edit affordance. Include pencil icon at the edge of the cell on the opposite side of the content as an indicator that the user can click the icon an edit that piece of content</p>
+                  </div>
+                  <div class="figure-group">
+                    <div class="figure-row">
+                      <figure class="">
+                          <div class="media">
+                           <img  src="../../imgs/list-edit.png">
+                          </div>
+                        <figcaption>
+                          <p>Content List Item from Content Library page</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inline start -->
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-L section-what-is-material color-default">&nbsp;</div>
+    <div class="footer-grid-L section-what-is-material color-default">
+      <a class="footer-text" href="../concerto/prototypes.html">
+        <i class="material-icons arrow-L">arrow_back</i>
+        <span class="direction">Previous</span>
+        <div>Prototypes</div>
+      </a>
+    </div>
+
+    <div class="footer-R section-animation color-default">&nbsp;</div>
+    <div class="footer-grid-R section-animation color-default">
+      <a class="footer-text" href="02-ideation.html">
+        <i class="material-icons arrow-R">arrow_forward</i>
+        <span class="direction">Next</span>
+        <div>Collection: Ideation</div>
+      </a>
+    </div>
+  </div>
+</footer>
+//= ../template/js.html
+</body>
+</html>

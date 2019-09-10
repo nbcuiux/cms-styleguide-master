@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+<head>
+  <meta charset="utf-8">
+  //= ../template/css.html
+  <title>Components - Cards - Concerto Style Guide | DPIM UX Team</title>
+
+</head>
+
+<body class="site-material_ext_publish section-animation first-chapter color-red qp-ui" data-qp-ui="{ 'Mask': {} }">
+  <header class="qp-ui" data-qp-ui="{
+    'Peekaboo': {
+      'mobile': 72,
+      'desktop-sm': 72,
+      'default': 192
+    }
+  }">
+  <div class="header-wrapper qp-ui" data-qp-ui="{
+    'Peekaboo': {
+      'mobile': 28,
+      'desktop-sm': 28,
+      'default': 82
+    }
+  }">
+  <div class="header-title">
+    <span class="section-title">Components</span>
+    <span class="chapter-title">
+      <span class="title-separator">—</span>
+      Cards
+    </span>
+  </div>
+</div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab"><i class="material-icons material-spec-icon" title="Show navigation">menu</i></button>
+</nav>
+
+//= ../template/menu.html
+
+<div id="grid-cont">
+  <section class="grid_outer chapter">
+    <h1 class="chapter-title">Cards</h1>
+
+    <div class="chapter-content">
+    <div class="chapter-intro">
+            <p>A card is a sheet of material that groups several types of content about a single subject. It could contain a photo, text, input fields, links, and many others.</p>
+    </div>
+      <nav class="chapter-toc">
+        <h1>Contents</h1>
+        <ul>
+          <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#usage">Usage</a></li>
+          <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#components">Components</a></li>
+          <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#card-layout">Card Layout</a></li>
+        </ul>
+      </nav>
+
+      <div class="article-list">
+        <!-- Usage Start -->
+        <div id="Usage" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+          <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">Usage</h2>
+          <div class="article-content">
+            <div class="module-list">
+              <div>
+                <section class="moduleB1">
+                  <div class="module-body">
+                    <p>A card conveniently displays elements that are different in type and sizes in one group. A card collection is a group of cards laid on the same plane.</p>
+                    <h3>When to Use</h3>
+                      <h4>Use cards for the following cases:</h4>
+                        <ul>
+                          <li>Comprised of multiple data types per card, but coherent in the information each card is conveying</li>
+                          <li>Does not require direct comparison among cards</li>
+                          <li>Content varies in length, e.g. title, description</li>
+                          <li>Content is interactive with multiple actions, e.g. Edit, select, remove on image cards.</li>
+                        </ul>
+                        <h4>Use case:</h4>
+                        <ul>
+                          <li>Card layout with multiple fields on one card</li>
+                          <li>Asset library’s image card</li>
+                        </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Usage End -->
+
+        <!-- Card Types Start-->
+        <div id="components" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+          <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">Components</h2>
+          <div class="article-content">
+            <div class="module-list">
+              <div>
+               <section class="moduleB1">
+                  <div class="module-body">
+                    <p>As cards are a major component for the CMS, there are multiple types of cards used each with distinct functions.</p>
+                  </div>
+                  </section>
+                <section class="moduleE1">
+                  <div class="module-body">
+                    <h4>A card has the following components:</h4>
+                    <ul>
+                      <li><strong>Title</strong>: Title of the card. It should represent the purpose of the grouping and the fields inside it.</li>
+                      <li><strong>Required fields count</strong>: When there is one or more required fields, a number count is displayed next to the title indicating how many required fields are yet to be filled out. As user completes the required field, the number counts down and disappears when it reaches to 0.</li>
+                      <li><strong>Folding icon</strong>: On the top-right corner, there is a caret that toggles to open or fold the card. The card is opened when pointing up, and it is closed when pointing down. By folding cards, user can easily navigate the page that can potentially get long.</li>
+                      <li><strong>Section subtitles</strong>: When fields within a card form further subgroups, there may be a subtitle that helps user to understand the purpose of the corresponding fields.</li>
+                    </ul>
+                  </div>
+                  <div class="figure-group">
+                    <div class="figure-row">
+                      <figure class="">
+                        <div class="media">
+                         <img src="../../imgs/generalCard.png">
+                        </div>
+                        <figcaption>
+                          <p>Series General Info Card</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </section>
+                <!--DO NOT REMOVE! Chips & Sheets -->
+                <!--section class="moduleE1">
+                  <div class="module-body">
+                    <h3>Chips</h3>
+                    <p>Chips represent complex entities in small blocks such as tags or categories.</p>
+                    <p>Chips are used when there are multiple predefined items the user can select.  Once chosen from a dropdown chips can be removed by clicking the delete icon (x) on the chip.</p>
+                    <p>Use Case: Tags and Categories</p>
+
+                    </ul>
+                  </div>
+                  <div class="figure-group">
+                    <div class="figure-row">
+                      <figure class="">
+                        <div class="media">
+                          <img src="../../imgs/chips.png">
+                        </div>
+                        <figcaption>
+                          <p>Categories and Tags</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </section>
+                <section class="moduleE1">
+                  <div class="module-body">
+                     <h3>Overflow menu</h3>
+                      <p>If there is not enough room on a card for all menu items, the menu items that would not be used multiple times get collapsed into three vertical dots.  Clicking on the dots reveals them again.</p>
+                     <p>Use Case: media card when screen size reduced</p>
+                  </div>
+                  <div class="figure-group">
+                    <div class="figure-row">
+                      <figure class="">
+                        <div class="media">
+                          <img src="../../imgs/overflow.png">
+                          </video>
+                        </div>
+                        <figcaption>
+                          <p>Media Card Overflow Menu</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </section-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card Type End -->
+         <!-- Card Layout Start-->
+        <div id="card-layout" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+          <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">Card Layout</h2>
+                <section class="moduleB1">
+                  <div class="module-body">
+                      <p>Some intro text</p>
+                  </div>
+                </section>
+
+                <section class="moduleE1">
+                  <div class="module-body">
+                    <h3>Side Navigation</h3>
+                    <p>The side navigation helps users to navigate through a page that contains multiple cards. It has following components:</p>
+                    <ul>
+                    <li><strong>Circle:</strong> Each circle represents a card in the page. The order of the circles represents the order of the cards, which would be reflected in the mobile layout as well. All the cards on the left column precedes the cards on the right, in order.Upon clicking on a circle, the screen scrolls to the top of the corresponding card. If the screen is already at the top of the card (e.g. the topmost card on the initial screen), then there is no scrolling. If the corresponding card is the very bottom card and the height does not exceed the height of the current screen, then the very bottom of the card is aligned with the very bottom of the screen. It DOES NOT scroll to the top of the card and leave the empty space at the bottom.Also, the corresponding card’s outline pulses in orange twice to indicate which card is selected.</li>
+                    <li><strong>Rollover labels:</strong> On mouseover, the title of the card is displayed in the tooltip.</li>
+                    <li><strong>Required field indicator:</strong> When there is one or more empty required field, the circle is marked with orange circle and outline.navigate the page that can potentially get long.</li>
+                    </ul>
+                  </div>
+                  <div class="figure-group">
+                    <div class="figure-row">
+                      <figure class="">
+                        <div class="media">
+                         <img src="../../imgs/card-nav.png">
+                        </div>
+                        <figcaption>
+                          <p>New Person Content Type</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </section>
+                <section class="moduleE1">
+                  <div class="module-body">
+                    <h3>Resonsive Ordering</h3>
+                    <p>As discussed above, all the cards on the left column precedes the cards on the right when collapsed into one column.</p>
+                    </ul>
+                  </div>
+                  <div class="figure-group">
+                    <div class="figure-row">
+                      <figure class="">
+                        <div class="media">
+                          <img s src="../../imgs/responsive-ordering.png">
+                        </div>
+                        <figcaption>
+                          <p>Reduced screen width </p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </section>
+                <section class="moduleE1">
+                  <div class="module-body">
+                     <h3>Spanning Cards</h3>
+                      <p>By default, all cards are laid in either the left or the right column. However, a card can span both columns when the said card has the most prominent use in the content.</p>
+                  </div>
+                  <div class="figure-group">
+                    <div class="figure-row">
+                      <figure class="">
+                        <div class="media">
+                          <img src="../../imgs/spanning-cards.png">
+                          </video>
+                        </div>
+                        <figcaption>
+                          <p>Media Card in create Gallery section</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Card Layout End-->
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-L section-what-is-material color-default">&nbsp;</div>
+    <div class="footer-grid-L section-what-is-material color-default">
+      <a class="footer-text" href="../concerto/prototypes.html">
+        <i class="material-icons arrow-L">arrow_back</i>
+        <span class="direction">Previous</span>
+        <div>Prototypes</div>
+      </a>
+    </div>
+
+    <div class="footer-R section-animation color-default">&nbsp;</div>
+    <div class="footer-grid-R section-animation color-default">
+      <a class="footer-text" href="02-ideation.html">
+        <i class="material-icons arrow-R">arrow_forward</i>
+        <span class="direction">Next</span>
+        <div>Collection: Ideation</div>
+      </a>
+    </div>
+  </div>
+</footer>
+//= ../template/js.html
+</body>
+</html>

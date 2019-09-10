@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+<head>
+  <meta charset="utf-8">
+  //= ../template/css.html
+  <title>Components - Pickers - Concerto Style Guide | DPIM UX Team</title>
+
+</head>
+
+<body class="site-material_ext_publish section-animation first-chapter color-red qp-ui" data-qp-ui="{ 'Mask': {} }">
+  <header class="qp-ui" data-qp-ui="{
+    'Peekaboo': {
+      'mobile': 72,
+      'desktop-sm': 72,
+      'default': 192
+    }
+  }">
+  <div class="header-wrapper qp-ui" data-qp-ui="{
+    'Peekaboo': {
+      'mobile': 28,
+      'desktop-sm': 28,
+      'default': 82
+    }
+  }">
+  <div class="header-title">
+    <span class="section-title">Components</span>
+    <span class="chapter-title">
+      <span class="title-separator">—</span>
+      Pickers
+    </span>
+  </div>
+</div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab"><i class="material-icons material-spec-icon" title="Show navigation">menu</i></button>
+</nav>
+
+//= ../template/menu.html
+
+<div id="grid-cont">
+  <section class="grid_outer chapter">
+    <h1 class="chapter-title">Checkboxes/Toggles</h1>
+
+    <div class="chapter-content">
+    <div class="chapter-intro">
+            <p>Pickers provide a simple way to select a single value from a pre-determined set.</p>
+    </div>
+      <nav class="chapter-toc">
+        <h1>Contents</h1>
+        <ul>
+          <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#date">Date Picker</a></li>
+          <!--li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#radio">Radio Toggle</a></li>
+          <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#multi-checkbox">Multi Checkbox</a></li-->
+        </ul>
+      </nav>
+
+      <div class="article-list">
+        <!-- On/Off Toggle Start -->
+        <div id="on-off" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+          <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">On/Off Toggle</h2>
+          <div class="article-content">
+            <div class="module-list">
+              <div>
+                <section class="moduleE1">
+                  <div class="module-body">
+                    <p>On/off switches toggle the state of a single settings option. The option that the switch controls, as well as the state it’s in, should be made clear from the corresponding inline label. The label should be positively worded so that the “on” state matches the “affirmative”.</p>
+                    <p>Use cases: on/off toggle for Syndicated and Scripted</p>
+                  </div>
+                     <div class="figure-group">
+                        <div class="figure-row">
+                          <figure class="">
+                            <div class="media">
+                             <img style="width: 50%" src="../../imgs/on-off.png">
+                            </div>
+                            <figcaption>
+                              <p>General info card on Series page</p>
+                            </figcaption>
+                          </figure>
+                        </div>
+                      </div>
+                 </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- On/off Toggle End -->
+
+        <!-- Radio Toggle Start-->
+        <div id="radio" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+          <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">Radio Toggle</h2>
+          <div class="article-content">
+            <div class="module-list">
+              <div>
+                <section class="moduleE1">
+                  <div class="module-body">
+                    <p>Radio toggle allows the user to choose one of the grouped options. Use a radio toggle when there are two or more options that logically belong to a single group. It only allows exclusive selection; only one of the items can be selected at a time.</p>
+                    <p>A radio toggle can be simply used to select one option, as well as to toggle among the different views of a part of a form. The different views would only present the applicable fields depending on the selection of the radio toggle.</p>
+                    <p>A radio toggle should present visually clear distinction among selected, hover, and unselected. This may be achieved by the appropriate layout, spacing, and the use of color. Individual buttons should be labeled with text, an icon, or both.</p>
+                    <p>Use cases: TV or Web episode selector</p>
+                  </div>
+                      <div class="figure-group">
+                        <div class="figure-row">
+                          <figure class="">
+                            <div class="media">
+                             <img style="width: 50%" src="../../imgs/toggle-tv.png">
+                            </div>
+                            <figcaption>
+                              <p>Toggle on TV episode</p>
+                            </figcaption>
+                          </figure>
+                          <figure class="">
+                            <div class="media">
+                             <img style="width: 50%" src="../../imgs/toggle-web.png">
+                            </div>
+                            <figcaption>
+                              <p>Toggle on Web episode</p>
+                            </figcaption>
+                          </figure>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Radio Toggle End -->
+         <!-- Multi-Checkbox Start-->
+        <div id="multi-checkbox" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+          <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">Multi-Checkbox</h2>
+          <div class="article-content">
+            <div class="module-list">
+              <div>
+                <section class="moduleE1">
+                  <div class="module-body">
+                    <p>Multi checkbox is only used for images. The list item is an image, and the checkbox appears on rollover when none of the items are selected. Once one or more items are selected, all the checkboxes on other items appear to indicate that those items are in the same group as the selected ones and thus can also be selected.</p>
+                    <p>Use cases: Asset Library, Media card</p>
+                  </div>
+                      <div class="figure-group">
+                        <div class="figure-row">
+                          <figure class="">
+                            <div class="media">
+                             <img style="width: 75%" src="../../imgs/multi-checkbox.png">
+                            </div>
+                            <figcaption>
+                              <p>Multiple items selected on Asset Library page</p>
+                            </figcaption>
+                          </figure>
+                        </div>
+                      </div>
+                </section>  
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Multi-Checkbox End-->
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-L section-what-is-material color-default">&nbsp;</div>
+    <div class="footer-grid-L section-what-is-material color-default">
+      <a class="footer-text" href="../concerto/prototypes.html">
+        <i class="material-icons arrow-L">arrow_back</i>
+        <span class="direction">Previous</span>
+        <div>Prototypes</div>
+      </a>
+    </div>
+
+    <div class="footer-R section-animation color-default">&nbsp;</div>
+    <div class="footer-grid-R section-animation color-default">
+      <a class="footer-text" href="02-ideation.html">
+        <i class="material-icons arrow-R">arrow_forward</i>
+        <span class="direction">Next</span>
+        <div>Collection: Ideation</div>
+      </a>
+    </div>
+  </div>
+</footer>
+//= ../template/js.html
+</body>
+</html>
